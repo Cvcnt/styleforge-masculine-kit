@@ -19,12 +19,16 @@ const Header = () => {
         <div className="flex items-center justify-between">
           {/* Logo */}
           <div className="flex items-center space-x-2">
-            <div className="w-10 h-10 bg-gradient-hero rounded-lg flex items-center justify-center">
-              <span className="text-white font-bold text-xl">M</span>
+            <div className="w-10 h-10 rounded-lg flex items-center justify-center overflow-hidden">
+              <img 
+                src="/lovable-uploads/03b8863e-3471-45a0-9a76-18b7a1f0fd5d.png" 
+                alt="MOANA SURF Logo" 
+                className="w-full h-full object-contain"
+              />
             </div>
             <div>
-              <h1 className="text-2xl font-bold text-gradient">MOHANA SURF</h1>
-              <p className="text-xs text-muted-foreground">Estilo Masculino</p>
+              <h1 className="text-2xl font-bold text-gradient">MOANA SURF</h1>
+              <p className="text-xs text-muted-foreground">Wood Boards Surf</p>
             </div>
           </div>
 

@@ -17,15 +17,15 @@ const Hero = () => {
       {/* Content */}
       <div className="relative z-10 text-center text-white px-4 max-w-4xl mx-auto animate-fade-in">
         <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight">
-          Estilo Casual para o
-          <span className="block text-transparent bg-gradient-to-r from-white to-accent bg-clip-text">
+          Estilo Surf para o
+          <span className="block text-transparent bg-gradient-to-r from-white via-yellow-200 to-orange-300 bg-clip-text">
             Homem Moderno
           </span>
         </h1>
         
         <p className="text-xl md:text-2xl mb-8 text-white/90 max-w-2xl mx-auto leading-relaxed">
-          Roupas confortáveis e estilosas para o seu dia a dia. 
-          Descubra nossa coleção exclusiva de moda masculina casual.
+          Roupas inspiradas no lifestyle surf com qualidade premium. 
+          Descubra nossa coleção exclusiva da MOANA SURF.
         </p>
 
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
@@ -40,7 +40,7 @@ const Hero = () => {
             size="lg" 
             className="border-2 border-white text-white hover:bg-white hover:text-primary text-lg px-8 py-4"
           >
-            Sobre Nós
+            Nossa História
           </Button>
         </div>
 

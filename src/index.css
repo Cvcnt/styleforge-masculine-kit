@@ -4,66 +4,68 @@
 @tailwind components;
 @tailwind utilities;
 
-/* MOHANA SURF - Masculine Fashion Store Design System */
+/* MOANA SURF - Sunset Surf Brand Design System */
 
 @layer base {
   :root {
-    /* Brand Colors - Masculine palette with surf vibes */
+    /* Brand Colors - Sunset surf palette */
     --background: 0 0% 100%;
-    --foreground: 216 15% 15%;
+    --foreground: 345 25% 15%;
 
     --card: 0 0% 100%;
-    --card-foreground: 216 15% 15%;
+    --card-foreground: 345 25% 15%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 216 15% 15%;
+    --popover-foreground: 345 25% 15%;
 
-    /* Primary - Deep Ocean Blue */
-    --primary: 210 85% 35%;
+    /* Primary - Coral Red (from logo text) */
+    --primary: 358 75% 55%;
     --primary-foreground: 0 0% 100%;
-    --primary-hover: 210 85% 30%;
+    --primary-hover: 358 75% 50%;
 
-    /* Secondary - Slate Gray */
-    --secondary: 215 15% 25%;
+    /* Secondary - Deep Coral */
+    --secondary: 345 65% 45%;
     --secondary-foreground: 0 0% 100%;
-    --secondary-hover: 215 15% 20%;
+    --secondary-hover: 345 65% 40%;
 
-    /* Muted - Light Gray */
-    --muted: 215 20% 96%;
-    --muted-foreground: 215 15% 45%;
+    /* Muted - Light Orange */
+    --muted: 25 35% 95%;
+    --muted-foreground: 345 15% 45%;
 
-    /* Accent - Surf Teal */
-    --accent: 185 85% 45%;
+    /* Accent - Sunset Orange */
+    --accent: 25 95% 55%;
     --accent-foreground: 0 0% 100%;
-    --accent-hover: 185 85% 40%;
+    --accent-hover: 25 95% 50%;
+
+    /* Success - Warm Yellow */
+    --success: 45 95% 55%;
+    --success-foreground: 345 25% 15%;
 
     /* Status Colors */
     --destructive: 0 75% 55%;
     --destructive-foreground: 0 0% 100%;
 
-    --success: 142 85% 45%;
-    --success-foreground: 0 0% 100%;
-
     --warning: 38 90% 55%;
     --warning-foreground: 0 0% 100%;
 
     /* UI Elements */
-    --border: 215 20% 88%;
-    --input: 215 20% 92%;
-    --ring: 210 85% 35%;
+    --border: 25 20% 88%;
+    --input: 25 20% 92%;
+    --ring: 358 75% 55%;
 
     --radius: 0.75rem;
 
-    /* Gradients */
-    --gradient-hero: linear-gradient(135deg, hsl(210 85% 35%) 0%, hsl(185 85% 45%) 100%);
-    --gradient-card: linear-gradient(145deg, hsl(0 0% 100%) 0%, hsl(215 20% 98%) 100%);
-    --gradient-surface: linear-gradient(180deg, hsl(215 20% 98%) 0%, hsl(215 20% 96%) 100%);
+    /* Gradients - Sunset inspired */
+    --gradient-hero: linear-gradient(135deg, hsl(358 75% 55%) 0%, hsl(25 95% 55%) 50%, hsl(45 95% 55%) 100%);
+    --gradient-card: linear-gradient(145deg, hsl(0 0% 100%) 0%, hsl(25 20% 98%) 100%);
+    --gradient-surface: linear-gradient(180deg, hsl(25 20% 98%) 0%, hsl(25 20% 96%) 100%);
+    --gradient-sunset: linear-gradient(135deg, hsl(358 75% 55%) 0%, hsl(15 85% 60%) 25%, hsl(25 95% 55%) 50%, hsl(45 95% 55%) 100%);
 
     /* Shadows */
-    --shadow-sm: 0 2px 8px hsl(216 15% 15% / 0.08);
-    --shadow-md: 0 4px 24px hsl(216 15% 15% / 0.12);
-    --shadow-lg: 0 8px 32px hsl(216 15% 15% / 0.16);
-    --shadow-accent: 0 8px 32px hsl(210 85% 35% / 0.25);
+    --shadow-sm: 0 2px 8px hsl(358 75% 55% / 0.12);
+    --shadow-md: 0 4px 24px hsl(358 75% 55% / 0.15);
+    --shadow-lg: 0 8px 32px hsl(358 75% 55% / 0.20);
+    --shadow-accent: 0 8px 32px hsl(25 95% 55% / 0.30);
 
     /* Transitions */
     --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
@@ -71,42 +73,42 @@
   }
 
   .dark {
-    --background: 216 15% 8%;
+    --background: 345 25% 8%;
     --foreground: 0 0% 95%;
 
-    --card: 216 15% 10%;
+    --card: 345 25% 10%;
     --card-foreground: 0 0% 95%;
 
-    --popover: 216 15% 10%;
+    --popover: 345 25% 10%;
     --popover-foreground: 0 0% 95%;
 
-    --primary: 210 85% 55%;
-    --primary-foreground: 216 15% 8%;
-    --primary-hover: 210 85% 60%;
+    --primary: 358 75% 65%;
+    --primary-foreground: 345 25% 8%;
+    --primary-hover: 358 75% 70%;
 
-    --secondary: 215 15% 15%;
+    --secondary: 345 65% 55%;
     --secondary-foreground: 0 0% 95%;
-    --secondary-hover: 215 15% 20%;
+    --secondary-hover: 345 65% 60%;
 
-    --muted: 215 15% 12%;
-    --muted-foreground: 215 10% 65%;
+    --muted: 345 15% 12%;
+    --muted-foreground: 345 10% 65%;
 
-    --accent: 185 85% 55%;
-    --accent-foreground: 216 15% 8%;
-    --accent-hover: 185 85% 60%;
+    --accent: 25 95% 65%;
+    --accent-foreground: 345 25% 8%;
+    --accent-hover: 25 95% 70%;
 
-    --border: 215 15% 18%;
-    --input: 215 15% 15%;
-    --ring: 210 85% 55%;
+    --border: 345 15% 18%;
+    --input: 345 15% 15%;
+    --ring: 358 75% 65%;
 
-    --gradient-hero: linear-gradient(135deg, hsl(210 85% 55%) 0%, hsl(185 85% 55%) 100%);
-    --gradient-card: linear-gradient(145deg, hsl(216 15% 10%) 0%, hsl(215 15% 12%) 100%);
-    --gradient-surface: linear-gradient(180deg, hsl(215 15% 12%) 0%, hsl(215 15% 10%) 100%);
+    --gradient-hero: linear-gradient(135deg, hsl(358 75% 65%) 0%, hsl(25 95% 65%) 50%, hsl(45 95% 65%) 100%);
+    --gradient-card: linear-gradient(145deg, hsl(345 25% 10%) 0%, hsl(345 15% 12%) 100%);
+    --gradient-surface: linear-gradient(180deg, hsl(345 15% 12%) 0%, hsl(345 15% 10%) 100%);
 
     --shadow-sm: 0 2px 8px hsl(0 0% 0% / 0.25);
     --shadow-md: 0 4px 24px hsl(0 0% 0% / 0.35);
     --shadow-lg: 0 8px 32px hsl(0 0% 0% / 0.45);
-    --shadow-accent: 0 8px 32px hsl(210 85% 55% / 0.35);
+    --shadow-accent: 0 8px 32px hsl(358 75% 65% / 0.35);
   }
 }
 
@@ -165,11 +167,12 @@
   /* Button Variants */
   .btn-hero {
     @apply bg-white text-primary hover:bg-white/90 px-8 py-4 rounded-full font-semibold text-lg transition-all duration-300 hover:scale-105;
-    box-shadow: var(--shadow-md);
+    box-shadow: var(--shadow-accent);
   }
 
   .btn-primary {
     @apply bg-primary text-primary-foreground hover:bg-primary/90 px-6 py-3 rounded-lg font-medium transition-all duration-300;
+    box-shadow: var(--shadow-sm);
   }
 
   .btn-secondary {
@@ -178,10 +181,17 @@
 
   .btn-accent {
     @apply bg-accent text-accent-foreground hover:bg-accent/90 px-6 py-3 rounded-lg font-medium transition-all duration-300;
+    box-shadow: var(--shadow-sm);
   }
 
   .btn-outline {
     @apply border-2 border-primary text-primary hover:bg-primary hover:text-primary-foreground px-6 py-3 rounded-lg font-medium transition-all duration-300;
+  }
+
+  .btn-sunset {
+    background: var(--gradient-sunset);
+    @apply text-white hover:scale-105 px-6 py-3 rounded-lg font-medium transition-all duration-300;
+    box-shadow: var(--shadow-accent);
   }
 
   /* Utility Classes */

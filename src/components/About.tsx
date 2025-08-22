@@ -32,23 +32,23 @@ const About = () => {
           <div className="space-y-8">
             <div>
               <h2 className="text-4xl md:text-5xl font-bold mb-6 text-gradient">
-                Sobre a MOHANA SURF
+                Sobre a MOANA SURF
               </h2>
               <div className="space-y-6 text-lg text-muted-foreground leading-relaxed">
                 <p>
-                  Nascida da paixão pelo estilo de vida surf e pela moda masculina casual, 
-                  a MOHANA SURF representa mais que uma marca - é um movimento de homens 
-                  que valorizam conforto, qualidade e autenticidade.
+                  Nascida da paixão pelo estilo de vida surf e pela conexão com o mar, 
+                  a MOANA SURF representa mais que uma marca - é um movimento de pessoas 
+                  que valorizam liberdade, autenticidade e qualidade.
                 </p>
                 <p>
-                  Desde nossa fundação, acreditamos que cada homem merece roupas que reflitam 
-                  sua personalidade única. Nossa coleção é cuidadosamente selecionada para 
-                  oferecer peças versáteis que transitam perfeitamente entre o casual e o 
-                  elegante.
+                  Especializada em wood boards artesanais e roupas surf premium, nossa 
+                  coleção é cuidadosamente criada para surfistas e amantes do lifestyle 
+                  que buscam produtos únicos e duradouros.
                 </p>
                 <p>
-                  Com foco na sustentabilidade e responsabilidade social, trabalhamos apenas 
-                  com fornecedores que compartilham nossos valores de qualidade e ética.
+                  Com foco na sustentabilidade e responsabilidade ambiental, trabalhamos 
+                  apenas com materiais naturais e processos que respeitam o oceano que 
+                  tanto amamos.
                 </p>
               </div>
             </div>

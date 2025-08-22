@@ -30,7 +30,7 @@ const WhatsAppFloat = () => {
                 <MessageCircle className="h-5 w-5 text-white" />
               </div>
               <div>
-                <h3 className="font-semibold text-foreground">MOHANA SURF</h3>
+                <h3 className="font-bold text-foreground">MOANA SURF</h3>
                 <p className="text-sm text-green-500">Online - Resposta rápida</p>
               </div>
             </div>

@@ -123,7 +123,7 @@ const Products = () => {
         </div>
 
         {/* Filters */}
-        <div className="flex flex-wrap justify-center gap-4 mb-12">
+        <div className="flex flex-col sm:flex-row gap-4">
           {filters.map((filter) => (
             <Button
               key={filter.id}
@@ -131,7 +131,7 @@ const Products = () => {
               onClick={() => setActiveFilter(filter.id)}
               className={`px-6 py-2 rounded-full transition-all duration-300 ${
                 activeFilter === filter.id 
-                  ? 'bg-primary text-primary-foreground shadow-accent' 
+                  ? 'btn-sunset shadow-accent' 
                   : 'hover:border-primary hover:text-primary'
               }`}
             >
@@ -180,7 +180,7 @@ const Products = () => {
 
                 {/* Quick Add to Cart */}
                 <div className="absolute bottom-3 left-3 right-3 opacity-0 group-hover:opacity-100 transform translate-y-4 group-hover:translate-y-0 transition-all duration-300">
-                  <Button className="w-full btn-primary shadow-md">
+                  <Button className="w-full btn-sunset shadow-md">
                     <ShoppingCart className="h-4 w-4 mr-2" />
                     Adicionar ao Carrinho
                   </Button>

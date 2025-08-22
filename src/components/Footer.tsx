@@ -91,19 +91,23 @@ const Footer = () => {
         <div className="grid lg:grid-cols-4 gap-12">
           {/* Brand Column */}
           <div className="lg:col-span-1">
-            <div className="flex items-center space-x-2 mb-6">
-              <div className="w-10 h-10 bg-gradient-hero rounded-lg flex items-center justify-center">
-                <span className="text-white font-bold text-xl">M</span>
+            <div className="flex items-center space-x-2">
+              <div className="w-10 h-10 rounded-lg flex items-center justify-center overflow-hidden">
+                <img 
+                  src="/lovable-uploads/03b8863e-3471-45a0-9a76-18b7a1f0fd5d.png" 
+                  alt="MOANA SURF Logo" 
+                  className="w-full h-full object-contain"
+                />
               </div>
               <div>
-                <h3 className="text-2xl font-bold">MOHANA SURF</h3>
-                <p className="text-xs text-white/70">Estilo Masculino</p>
+                <h3 className="text-2xl font-bold">MOANA SURF</h3>
+                <p className="text-xs text-white/70">Wood Boards Surf</p>
               </div>
             </div>
             
             <p className="text-white/80 mb-6 leading-relaxed">
-              Moda masculina casual com qualidade premium. 
-              Descubra seu estilo com a MOHANA SURF.
+              Lifestyle surf e wood boards artesanais com qualidade premium. 
+              Descubra seu estilo com a MOANA SURF.
             </p>
 
             {/* Social Links */}
@@ -163,7 +167,7 @@ const Footer = () => {
               
               <div className="flex items-center space-x-3">
                 <Mail className="h-5 w-5 text-accent" />
-                <div className="text-white/80">contato@mohanasurf.com</div>
+                <div className="text-white/80">contato@moanasurf.com</div>
               </div>
             </div>
 
@@ -181,7 +185,7 @@ const Footer = () => {
         <div className="container-max px-4 py-6">
           <div className="flex flex-col lg:flex-row justify-between items-center space-y-4 lg:space-y-0">
             <div className="text-white/60 text-sm">
-              © 2024 MOHANA SURF. Todos os direitos reservados.
+              © 2024 MOANA SURF. Todos os direitos reservados.
             </div>
             
             {/* Payment Methods */}
