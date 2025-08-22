@@ -1,9 +1,11 @@
 import { useState } from 'react';
-import { Menu, X, Search, ShoppingCart, Heart, User } from 'lucide-react';
+import { Menu, X, Search, ShoppingCart, Heart, User, Camera } from 'lucide-react';
 import { Button } from '@/components/ui/button';
+import PhotoUploader from './PhotoUploader';
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [showPhotoUploader, setShowPhotoUploader] = useState(false);
 
   const navItems = [
     { name: 'Início', href: '#home' },
@@ -53,6 +55,15 @@ const Header = () => {
             <Button variant="ghost" size="icon" className="hidden sm:flex">
               <Heart className="h-5 w-5" />
             </Button>
+            <Button 
+              variant="ghost" 
+              size="icon" 
+              className="hidden sm:flex"
+              onClick={() => setShowPhotoUploader(true)}
+              title="Trocar fotos da loja"
+            >
+              <Camera className="h-5 w-5" />
+            </Button>
             <Button variant="ghost" size="icon" className="relative">
               <ShoppingCart className="h-5 w-5" />
               <span className="absolute -top-2 -right-2 bg-accent text-accent-foreground text-xs rounded-full w-5 h-5 flex items-center justify-center">
@@ -96,6 +107,14 @@ const Header = () => {
                 <Button variant="ghost" size="icon">
                   <Heart className="h-5 w-5" />
                 </Button>
+                <Button 
+                  variant="ghost" 
+                  size="icon"
+                  onClick={() => setShowPhotoUploader(true)}
+                  title="Trocar fotos da loja"
+                >
+                  <Camera className="h-5 w-5" />
+                </Button>
                 <Button variant="ghost" size="icon">
                   <User className="h-5 w-5" />
                 </Button>
@@ -104,6 +123,10 @@ const Header = () => {
           </nav>
         )}
       </div>
+
+      {showPhotoUploader && (
+        <PhotoUploader onClose={() => setShowPhotoUploader(false)} />
+      )}
     </header>
   );
 };
