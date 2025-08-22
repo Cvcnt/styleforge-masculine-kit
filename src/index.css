@@ -151,7 +151,7 @@
 
   /* Category Card Styles */
   .category-card {
-    @apply relative overflow-hidden rounded-xl group cursor-pointer;
+    @apply relative overflow-hidden rounded-xl cursor-pointer;
   }
 
   .category-overlay {

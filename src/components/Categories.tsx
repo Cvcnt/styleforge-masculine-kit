@@ -62,7 +62,7 @@ const Categories = () => {
           {categories.map((category, index) => (
             <div
               key={category.id}
-              className={`category-card h-80 animate-fade-in`}
+              className={`category-card group h-80 animate-fade-in`}
               style={{ animationDelay: `${index * 0.1}s` }}
             >
               <img
